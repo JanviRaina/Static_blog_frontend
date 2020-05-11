@@ -10,6 +10,12 @@
 
     <title>About Us</title>
   </head>
+<style>
+  .tro{
+  opacity: 0.5;
+}
+</style>
+
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -45,20 +51,106 @@
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
           </form>
+          <div class="mx-2">
+            <button class="btn btn-light" data-toggle="modal" data-target="#signinModal"> Sign in </button>
+            <button class="btn btn-light" data-toggle="modal" data-target="#signupModal" > Sign Up </button>
+            </div>
         </div>
       </nav>
 
 
 
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signinModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you want to Sign In?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Sign In</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Do you want to Sign Up?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Sign Up</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="trophy.jpg" class="d-block w-100 tro" alt="...">"
+            <div class="carousel-caption d-none d-md-block">     
+                <h1>ABOUT US </h1>           
+                <button class="btn btn-success">Asia</button>
+                <button class="btn btn-warning">America</button>
+                <button class="btn btn-primary">Other places</button>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="container marketing my-5">
+      <div class="row featurette my-4">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Where did it all begin ? 
+            <span class="text-muted">Inside Story</span></h2>
+          <p class="lead">
+            This frontend part is built by me,JR,a btech SY Extc.
+            <hr>  
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatem voluptatibus p
+            erferendis laudantium tempore tenetur vel iste inventore libero culpa. Ad tempore obcaecati
+             tempora sit laborum esse porro corporis magni?Deleniti repudiandae, at officia nemo quos quasi 
+             vitae fugit accusamus ullam voluptas
+             aperiam deserunt esse quibusdam quia a est sit facilis ipsa iusto
+              impedit officiis! Facilis nulla atque obcaecati dignissimos.
+
+          </p>
+        </div>
+        <div class="col-md-5">
+       <img src="passion.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+      </div>
 
 
 
 
 
       
-<footer class="container">
+<footer class="container foot">
     <p class="float-right"><a href="/index.html">Back to Home</a></p>
     <p>©2020 JR,Inc. · <a href="/about.html">About Us</a> · <a href="/terms.html">Terms</a></p>
   </footer>
